@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('fonts/TTLakes-Regular.eot');
+    src: url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Regular.woff') format('woff'),
+    url('fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('fonts/TTLakes-Medium.eot');
+    src: url('fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Medium.woff') format('woff'),
+    url('fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('fonts/TTLakes-Bold.eot');
+    src: url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Bold.woff') format('woff'),
+    url('fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { box-sizing: border-box; }
+
+.list-of-brands { /* body */
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'TT Lakes Regular', Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7e7e82;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1120px;
+    min-height: 100vh;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 767px) {
+    .main-container {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        padding-bottom: 25px;
+    }
+}
+
+.title-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 56px;
+    padding: 0;
+    background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+}
+
+@media screen and (max-width: 768px) {
+    .title-container {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title-container {
+        height: auto;
+    }
+}
+
+.title {
+    font-family: 'TT Lakes Regular', Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7e7e82;
+    text-transform: uppercase;
+    font-weight: normal;
+    
+    display: inline-block;
+    margin: 16px;
+}
+
+.brands-container {
+    display: block;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    overflow: visible;
+}
+
+.hidden {
+    max-height: 217px;
+    overflow: hidden;
+}
+
+.menu-list {
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 8px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-list {
+        padding: 12px 0;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu-list {
+        padding: 9px;
+        justify-content: flex-start;
+    }
+}
+
+.menu-item {
+    list-style: none;
+    flex: 0 0 240px;
+    width: auto;
+    height: auto;
+    margin: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-item {
+        flex: 1 0 224px;
+        margin: 12px;
+    }
+    .hidden {
+        max-height: 207px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 320px) {
+    .menu-item {
+        margin: 0;
+        margin-top: 15px;
+    }
+    .hidden {
+        max-height: 195px;
+        overflow: hidden;
+    }
+}
+
+.menu-item .link-to-brand {
+    text-decoration: none;
+    display: block;
+    width: 240px;
+    height: 72px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    border-radius: 6px;
+    position: relative;    
+}
+
+@media screen and (max-width: 768px) {
+    .menu-item .link-to-brand {
+        width: auto;
+        min-width: 224px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu-item .link-to-brand {
+        width: auto;
+        min-width: 224px;
+    }
+}
+
+.menu-item .link-to-brand::before {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #ff3e79;
+    border-top: 2px solid #ff3e79;
+    border-left: transparent;
+    border-bottom: transparent;
+}
+
+.menu-item .link-to-brand::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff3e79;
+    border-radius: 50%;
+}
+
+.menu-item .link-to-brand:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.lenovo {
+    background: url('img/lenovo.png') no-repeat 16px 50%;
+}
+.samsung {
+    background: url('img/samsung.png') no-repeat 16px 50%;
+}
+.apple {
+    background: url('img/apple.png') no-repeat 16px 50%;
+}
+.viewsonic {
+    background: url('img/viewsonic.png') no-repeat 14px 50%;
+}
+.bosch {
+    background: url('img/bosch.png') no-repeat 16px 50%;
+}
+.hp {
+    background: url('img/hp.png') no-repeat 10px 50%;
+}
+.acer {
+    background: url('img/acer.png') no-repeat 16px 50%;
+}
+.sony {
+    background: url('img/sony.png') no-repeat 14px 50%;
+}
+
+/* Кнопка - показать еще */
+
+.button-read-more {
+    font-family: 'TT Lakes Bold', Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1c21;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 48px;
+    cursor: pointer;
+    position: relative;    
+}
+
+.button-read-more::before {
+    content: url('img/arrow-down.svg');
+    position: absolute;
+    left: -17px;
+}
+
+.button-read-more-up {
+    font-family: 'TT Lakes Bold', Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1c21;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 48px;
+    cursor: pointer;
+    position: relative;    
+}
+
+.button-read-more-up::before {
+    content: url('img/arrow-up.svg');
+    position: absolute;
+    left: -17px;
+}
+
+
